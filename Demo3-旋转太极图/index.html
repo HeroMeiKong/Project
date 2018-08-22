@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>旋转太极图</title>
+      <meta charset="utf-8">
+      <meta name="keywords" content="太极,旋转太极图">
+      <meta name="description" content="欢迎来观看我的网站">
+      <style>
+          body{
+              margin: 0;
+              background-color: #cccccc;
+              font-size: 10em;
+          }
+          .taichi{
+              display: flex;
+              align-items: center;
+              width: 1em;
+              height: 1em;
+              background:linear-gradient(to bottom,black 50%,white 50%);
+              margin: 100px auto;
+              border-radius: 50%;
+          }
+          .taichi::before,.taichi::after{
+              display: block;
+              content: "";
+              width: 50%;
+              height: 50%;
+              border-radius: 50%;
+              animation: mycartoon 1s infinite alternate linear;
+          }
+          .taichi::before{
+              background:radial-gradient(black 25%,white 25%);
+              transform-origin: 0% 50%;
+          }
+          .taichi::after{
+              background:radial-gradient(white 25%,black 25%);
+              transform-origin: 100% 50%;
+              animation-delay: -1s;
+          }
+          @keyframes mycartoon {
+              from{
+                  transform: scale(0.5);
+              }
+              to{
+                  transform: scale(1.5);
+              }
+          }
+      </style>
+  </head>
+<body>
+  <i class="taichi">
+  </i>
+</body>
+</html>
