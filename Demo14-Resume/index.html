@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HeroMeiKong</title>
+  <script src="//at.alicdn.com/t/font_595210_1osih6a3rawz5mi.js"></script>
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/loading.css">
+</head>
+
+<body>
+  <div id="WelcomeAnimation" class="welcome_animation active">
+    <div class="loading"></div>
+  </div>
+  <div id="topNavBar" class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+      <a class="logo" href="#" alt="logo" style="float: left; ">
+        <span class="yk">YK</span><span class="card">card</span>
+      </a>
+      <nav class="menu">
+        <ul class="clearfix">
+          <li>
+            <a href="#siteAbout">关于</a>
+          </li>
+          <li>
+            <a href="#siteSkills">技能</a>
+          </li>
+          <li>
+            <a href="#siteWorks">作品</a>
+            <ul class="submenu">
+              <li>框架</li>
+              <li>原生JS&CSS</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#siteBlog">博客</a>
+            <ul class="submenu">
+              <li>简书</li>
+              <li>Hexo</li>
+              <li>知乎</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#siteWorkExperience">工作经历</a>
+          </li>
+          <li>
+            <a href="#siteContact">联系方式</a>
+          </li>
+          <li>
+              <a href="#siteOther">其他</a>
+            </li>
+          <li>
+              <a href="#siteMessageBoard">留言板</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <main>
+    <div data-x id="siteAbout" class="usercard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./images/avatar.jpg" alt="头像">
+        </div>
+        <div class="text">
+          <span class="welcome">Hello
+            <span class="triangle"></span>
+          </span>
+          <h1>杨昆</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>23</dd>
+            <dt>所在城市</dt>
+            <dd>成都</dd>
+            <dt>邮箱</dt>
+            <dd>xiaopangfeng4@hotmail.com</dd>
+            <dt>手机</dt>
+            <dd>18228277577</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-CN_jianshu"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weixin"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-google"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-qq"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-microsoftoutlook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-web"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    <p class="downloadResume-wrappar">
+      <a class="downloadResume" href="./test.pdf" target="_blank" download>DOWNLOAD RESUME</a>
+    </p>
+    <p class="selfIntroduction">
+      杨昆，2018应届毕业生。
+      <br> 技能：前端开发，Rails 开发，Node.js 开发
+    </p>
+  </main>
+
+  <section data-x id="siteSkills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>HTML 5 &amp; CSS 3</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>JavaScript</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>jQuery</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 50%;">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>Vue.js</h3>
+        <div class="progressBar">
+          <div class="progress">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>React.js</h3>
+        <div class="progressBar">
+          <div class="progress">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>HTTP</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%;">
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-x id="siteWorks" class="portfolio">
+    <h2>作品集</h2>
+    <nav>
+      <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架&amp;原生JS</li>
+        <li id="portfolio3">CSS</li>
+      </ol>
+      <div id="portfolioBar" class="selectBar state1">
+        <div class="selectBar-inner"></div>
+      </div>
+    </nav>
+    <script>
+      portfolio1.onclick = function(){
+        portfolioBar.className = 'selectBar state1'
+        document.querySelector("#portfoliosAll").setAttribute("style","display: flex;");
+        document.querySelector("#portfoliosFrame").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosCSS").setAttribute("style","display: none;");
+      }
+      portfolio2.onclick = function(){
+        portfolioBar.className = 'selectBar state2'
+        document.querySelector("#portfoliosFrame").setAttribute("style","display: flex;");
+        document.querySelector("#portfoliosAll").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosCSS").setAttribute("style","display: none;");
+      }
+      portfolio3.onclick = function(){
+        portfolioBar.className = 'selectBar state3'
+        document.querySelector("#portfoliosCSS").setAttribute("style","display: flex;");
+        document.querySelector("#portfoliosAll").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosFrame").setAttribute("style","display: none;");
+      }
+    </script>
+    <div id="portfolio">
+      <div id="portfoliosAll">
+        <div class="bigOne portfolios">
+          <img src="./images/works1.jpg" alt="Work1">
+          <div id="tools">
+            <div class="tools tool1">
+              <img src="./images/icons/github.png" alt="GitHub">
+            </div>
+            <div class="tools tool2">
+              <img src="./images/icons/eye.png" alt="Demo">
+            </div>
+            <div class="tools tool3">
+              <img src="./images/icons/link.png" alt="Link">
+            </div>
+            <h1>Vue.js在线简历编辑器</h1>
+            <p>关键字：Vue、Webpack</p>
+          </div>
+        </div>
+        <div class="middleOne"></div>
+        <div class="smallOne">
+          <div  class="portfolios">
+            <img src="./images/works2.jpg" alt="Work2">
+            <div id="smalltools1">
+                <div class="smalltools tool4">
+                  <img src="./images/icons/smallgithub.png" alt="GitHub">
+                </div>
+                <div class="smalltools tool5">
+                  <img src="./images/icons/smalleye.png" alt="Demo">
+                </div>
+                <div class="smalltools tool6">
+                  <img src="./images/icons/smalllink.png" alt="Link">
+                </div>
+                <h5>原生JS实现皮卡丘</h5>
+                <h6>关键字：原生JS、CSS</h6>
+              </div>
+          </div>
+          <div  class="portfolios">
+            <img src="./images/works3.jpg" alt="Work3">
+            <div id="smalltools2">
+                <div class="smalltools tool4">
+                  <img src="./images/icons/smallgithub.png" alt="GitHub">
+                </div>
+                <div class="smalltools tool5">
+                  <img src="./images/icons/smalleye.png" alt="Demo">
+                </div>
+                <div class="smalltools tool6">
+                  <img src="./images/icons/smalllink.png" alt="Link">
+                </div>
+                <h5>绘画大白</h5>
+                <h6>关键字：CSS</h6>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfoliosFrame" style="display: none;">
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>Vue.js在线简历编辑器</p>
+            <h6>关键字：Vue、Canvas</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame1.png" alt="Frame1">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+              <p>jQuery仿网易云</p>
+              <h6>关键字：jQuery、原生JS</h6>
+          </div>
+          <div class="porright">
+              <img src="./images/frame2.png" alt="Frame2">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>仿QQ音乐</p>
+            <h6>关键字：原生JS、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame3.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>共享博客</p>
+            <h6>关键字：Vue.JS、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame4.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>重构有赞商城</p>
+            <h6>关键字：Vue.JS、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame5.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>Vue.js技术栈</p>
+            <h6>关键字：Vue、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame6.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>Node.js在线备忘录</p>
+            <h6>关键字：Node.js、Express</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame7.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>React之Todo-List</p>
+            <h6>关键字：React.js、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame8.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>Canvas画板</p>
+            <h6>关键字：原生JS</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame9.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+            <div class="porleft">
+              <p>待完成项目1</p>
+              <h6>关键字：Node.js、Express</h6>
+            </div>
+            <div class="porright">
+              <img src="./images/frame.png" alt="Frame3">
+            </div>
+          </div>
+          <div class="portfoliosFrame">
+            <div class="porleft">
+              <p>待完成项目2</p>
+              <h6>关键字：React.js、Webpack</h6>
+            </div>
+            <div class="porright">
+              <img src="./images/frame.png" alt="Frame3">
+            </div>
+          </div>
+          <div class="portfoliosFrame">
+            <div class="porleft">
+              <p>待完成项目3</p>
+              <h6>关键字：原生JS</h6>
+            </div>
+            <div class="porright">
+              <img src="./images/frame.png" alt="Frame3">
+            </div>
+          </div>
+        </div>
+      <div id="portfoliosCSS" style="display: none;">
+        <div class="portfoliosCSS1 portfoliosCSSBoth">
+          <article>
+            <div class="CSS-media">
+              <div class="CSS-image">
+                <a href="#">
+                  <img src="./images/css1.jpg" alt="CSS1">
+                </a>
+              </div>
+            </div>
+            <div class="CSS-date">
+              <time class="CSS-datetime">
+                <span class="CSS-date-day">04</span>
+                <span class="CSS-date-mouth">Feb</span>
+              </time>
+              <div class="CSS-tag">
+                <a href="#">#CSS</a>
+                <a href="#">#Pikachu</a>
+                <a href="#">#原生JS</a>
+              </div>
+              <h3 class="CSS-title">
+                <a href="#">Pikachu</a>
+              </h3>
+              <div class="CSS-info">
+                <a href="#">by HeroMeiKong</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="portfoliosCSS2 portfoliosCSSBoth">
+            <article>
+                <div class="CSS-media">
+                  <div class="CSS-image">
+                    <a href="#">
+                      <img src="./images/css2.jpg" alt="CSS2">
+                    </a>
+                  </div>
+                </div>
+                <div class="CSS-date">
+                  <time class="CSS-datetime">
+                    <span class="CSS-date-day">11</span>
+                    <span class="CSS-date-mouth">Feb</span>
+                  </time>
+                  <div class="CSS-tag">
+                      <a href="#">#CSS</a>
+                      <a href="#">#Baymax</a>
+                      <a href="#">#原生JS</a>
+                  </div>
+                  <h3 class="CSS-title">
+                    <a href="#">Baymax</a>
+                  </h3>
+                  <div class="CSS-info">
+                    <a href="#">by HeroMeiKong</a>
+                  </div>
+                </div>
+              </article>
+        </div>
+        <div class="portfoliosBlog">
+          <a href="#">VISIT MY GITHUB</a>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <button class="btn">
+        <div class="imgs"></div>
+      </button>
+    </div>
+  </section>
+  <section data-x id="siteBlog">
+    <h2>
+      <font>我的博客</font>
+    </h2>
+    <div id="myBlog">
+      <div class="Blogs">
+        <div class="myBlog">
+          <div class="myBlogImg jianshu">
+            <div class="blogLink">跳转到简书</div>
+          </div>
+          <div class="myBlogInfo">
+            <h3>我的简书</h3>
+            <p>记录美好的生活点滴.</p>
+          </div>
+        </div>
+        <div class="myBlog">
+          <div class="myBlogImg hexo">
+            <div class="blogLink">跳转到Hexo</div>
+          </div>
+          <div class="myBlogInfo">
+            <h3>我的Hexo</h3>
+            <p>写下想写的博客..</p>
+          </div>
+        </div>
+        <div class="myBlog">
+          <div class="myBlogImg github">
+            <div class="blogLink">跳转到GitHub</div>
+          </div>
+          <div class="myBlogInfo">
+            <h3>我的GitHub</h3>
+            <p>全是代码...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-x id="siteWorkExperience">
+    <h2>
+      <font>工作经历</font>
+    </h2>
+    <div class="timeline">
+      <div class="timeline-bar"></div>
+      <div class="timeliner-inner">
+        <div class="timeliner-box timeliner-box-left timeliner-box-position1">
+          <span class="dot dot1"></span>
+          <div class="timeline-box-inner">
+            <span class="arrow-left"></span>
+            <div class="timeline-head">
+              <div class="timedate">2018年7月-至今</div>
+              <a href="#" class="img"><img src="./images/logo/es6.png" alt></a>
+            </div>
+            <h5>Web前端开发</h5>
+            <p>保持饥渴，保持学习！2018届应届毕业生，寻找工作当中...</p>
+          </div>
+        </div>
+        <div class="timeliner-box timeliner-box-right timeliner-box-position2">
+          <span class="dot dot2"></span>
+          <div class="timeline-box-inner">
+            <span class="arrow-right"></span>
+            <div class="timeline-head">
+              <div class="timedate">2014年9月-2018年7月</div>
+              <a href="#" class="img"><img src="./images/logo/asp.net.png" alt></a>
+            </div>
+            <h5>在校生</h5>
+            <p>2014年就读于成都信息工程大学网络工程专业，学习.net开发！</p>
+          </div>
+        </div>
+        <div class="timeliner-box timeliner-box-left timeliner-box-position3">
+          <span class="dot dot1"></span>
+          <div class="timeline-box-inner">
+            <span class="arrow-left"></span>
+            <div class="timeline-head">
+              <div class="timedate">1994年12月31日</div>
+              <a href="#" class="img"><img src="./images/logo/born.png" alt></a>
+            </div>
+            <h5>来自baby的咆哮...</h5>
+            <p>感谢父母，选择我，我爱你们...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-x id="siteContact">
+    <h2>
+      <font>联系方式</font>
+    </h2>
+    <div class="contact">
+      <div class="contact-box">
+        <ul class="contact-list">
+          <li>
+            <strong>E-mail:</strong>
+            <span>xiaopangfeng4@hotmail.com</span>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <span>18228277577</span>
+          </li>
+          <li>
+            <strong>微信：</strong>
+            <span>yk18228277577</span>
+          </li>
+          <li>
+            <strong>QQ：</strong>
+            <span>1255309829</span>
+          </li>
+          <li>
+            <strong>G-mail：</strong>
+            <span>xiaopangfeng4@gmail.com</span>
+          </li>
+          <li>
+            <strong>钉钉：</strong>
+            <span>18228277577</span>
+          </li>
+        </ul>
+        <div class="more-contact">
+          <div class="more-title">更多联系方式</div>
+          <ul>
+            <li>
+              <a href=""><img src="./images/more/wb.png" alt="微博"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/jianshu.png" alt="简书"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/zhihu.png" alt="知乎"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/github.png" alt="GitHub"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/StackOverflow.png" alt="StackOverFlow"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/juejin.png" alt="掘金"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/more/v2ex.png" alt="V2EX"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-x id="siteOther">
+    <h2>
+      <font>其他</font>
+    </h2>
+    <div class="other-box">
+      <ul>
+        <li>
+          <h3>我的兴趣爱好</h3>
+          <div class="other-box-content">追动漫、看电影、听歌<br>对新事物（技术）会痴迷学习甚至掌握<br>偶尔会动手制作自己喜欢的东西（网页、小程序、手工作品等...）</div>
+        </li>
+        <li>
+          <h3>期望的工作</h3>
+          <div class="other-box-content">1.一周工作时间：5-6天<br> 2.能有技术大牛指导工作<br> 3.留有自主学习时间<br> 4.工作氛围友好</div>
+        </li>
+        <li>
+          <h3>自我评价</h3>
+          <div class="other-box-content">热爱编程，对新技术有很浓的兴趣，特别是前端方面；性格乐观开朗，喜欢接受新的事物，能够独立开发，自学能力强，承压能力强，对工作认真负责，有团队合作意识，有良好的沟通表达能力。</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="siteMessageBoard">
+    <h2>留言版</h2>
+    <div class="MessageBoard">
+      <div class="MessageBoard-box">
+        <label for="">最近留言记录</label>
+        <ol id="messageList"></ol>
+      </div>
+      <div class="postMessageForm">
+        <label for="">留言</label>
+        <form id="postMessageForm">
+          <div id="name">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+          </div>
+          <div id="content">
+            <label for="">内容</label>
+            <input type="text" name="content">
+          </div>
+          <input type="submit" value="提交" id="subbtn">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div id="bottom-div">
+      <div class="bottom-div">
+        <span>©2018</span>
+        <span>yangkun</span>
+      </div>
+    </div>
+  </footer>
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script>
+  <!--模块化-->
+  <script src="./scripts/Tween.js"></script>
+  <script src="./scripts/auto-slide-up.js"></script>
+  <script src="./scripts/message.js"></script>
+  <script src="./scripts/smoothly-navigation.js"></script>
+  <script src="./scripts/sticky-topbar.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
