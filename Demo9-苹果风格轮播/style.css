@@ -1,0 +1,69 @@
+body,h1,p,ul,li{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+	color:#444444;
+	font-size:13px;
+	background: #f2f2f2;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#main{
+	margin:15px auto;
+	text-align:center;
+	width:920px;
+	position:relative;
+}
+h1{
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size: 42px;
+	font-weight: normal;
+	padding: 35px;
+}
+
+#gallery{
+	box-shadow: 0 0 3px #AAAAAA;
+	border-bottom-right-radius:4px;
+	border:1px solid white;
+	background:url(images/panel.jpg) repeat-x bottom center #ffffff;
+	width:920px;
+	overflow:hidden;
+}
+.slides{
+	height: 400px;
+	width: 920px;
+	overflow: hidden;
+}
+.images{
+	display: flex;
+	align-items: flex-start;
+	transition: all 0.5s;
+}
+.images > img{
+	vertical-align: top;
+	height: 400px;
+	width: 920px;
+}
+#menu{
+	height: 45px;
+}
+li{
+	width:60px;
+	display:inline-block;
+	list-style:none;
+	height:45px;
+	overflow:hidden;
+}
+.fbar{
+	width:2px;
+	background:url(images/divider.png) no-repeat right;
+}
+li div{
+	background:url(images/divider.png) no-repeat right;
+	height:35px;
+	padding-top:10px;
+}
+p{
+	padding:10px;
+	text-align:center;
+}
