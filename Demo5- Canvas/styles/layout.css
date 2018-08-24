@@ -1,0 +1,79 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+ul,li{list-style: none;}
+body{
+  overflow: hidden;
+}
+#xxx{
+  background: #FFFFFF;
+  display: block;
+}
+#draw{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 100vh;
+  background: #FFCEAD;
+}
+.actions{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 52px;
+}
+.tools{
+  position: fixed;
+  top: 250px;
+  left: 0;
+  width: 52px;
+}
+.icon {
+  width: 3rem; height: 3rem;
+  vertical-align: -0.15em;
+  fill: #2F464A;
+  overflow: hidden;
+  padding: 10px;
+  cursor: pointer;
+}
+.icon:hover{
+  transform: scale(1.2);
+}
+
+.icon.active{
+  fill:#FDFFA1;
+  transform: scale(1.5);
+}
+
+
+.colors{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.colors > li{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.25);
+  margin: 10px 10px;
+  cursor: pointer;
+}
+.colors > li.red{
+  background: red;
+}
+.colors > li.yellow{
+  background: yellow;
+}
+.colors > li.blue{
+  background: blue;
+}
+.colors > li.green{
+  background: green;
+}
+.colors > li.black{
+  background: black;
+}
+.colors > li.active{
+  transform: scale(1.5);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+}

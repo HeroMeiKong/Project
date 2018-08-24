@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./styles/layout.css">
+</head>
+<body>
+  <canvas id="xxx"></canvas>
+  <div id="draw">
+    <div id=actions class="actions">
+      <svg id="pensmall" class="icon active">
+        <use xlink:href="#icon-pen"></use>
+      </svg>
+      <svg id="penmiddle" class="icon">
+        <use xlink:href="#icon-pen1"></use>
+      </svg>
+      <svg id="penbig" class="icon">
+        <use xlink:href="#icon-pen2"></use>
+      </svg>
+      <svg id="eraser-circle" class="icon">
+        <use xlink:href="#icon-circle"></use>
+      </svg>
+      <svg id="eraser-rect" class="icon">
+        <use xlink:href="#icon-eraser"></use>
+      </svg>
+    </div>
+    <div id=tools class="tools">
+      <svg id="clear" class="icon">
+        <use xlink:href="#icon-custom-clear"></use>
+      </svg>
+      <svg id="download" class="icon">
+        <use xlink:href="#icon-Download"></use>
+      </svg>
+    </div>
+    <ol class="colors" id="colors">
+      <li class="red" id="red"></li>
+      <li class="yellow" id="yellow"></li>
+      <li class="green" id="green"></li>
+      <li class="blue" id="blue"></li>
+      <li class="black active" id="black"></li>
+    </ol>
+  </div>
+  <script src="https://at.alicdn.com/t/font_806140_c15vsjmatuk.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
