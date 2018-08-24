@@ -50,7 +50,6 @@ function changeColor(aim) {
         activeicn.classList.add('active')
         defaultColor = x.currentTarget.id
         context.strokeStyle = defaultColor
-        console.log(defaultColor)
         let siblings = allSiblings(activeicn)
         for (j = 0; j < siblings.length; j++) {
           siblings[j].classList.remove('active')
@@ -82,8 +81,6 @@ function changeLineWidth(aim) {
           context.lineWidth = 5
           eraserEnabled = false
           context.strokeStyle = defaultColor
-          console.log(defaultColor)
-          console.log(context.strokeStyle)
           break
         case 'eraser-circle':
           context.lineWidth = 5
@@ -170,15 +167,19 @@ function listenToMouse(canvas) {
       var x = aaa.touches[0].clientX
       var y = aaa.touches[0].clientY
       using = true
+      context.fillStyle = '#FFFFFF'
       if (eraserEnabled) {
         if (circleShape) {
-          context.globalCompositeOperation = 'destination-out';
-          context.strokeStyle = "#000";
           context.beginPath();
-          context.arc(x, y, 5, 0, Math.PI * 2);
+          context.arc(x, y, 3, 0, Math.PI * 2);
           context.fill();
+          context.closePath()
         } else {
-          context.clearRect(x - 5, y - 5, 10, 10)
+          context.clearRect(x - 3, y - 3, 6, 6)
+        }
+        eraserPoint = {
+          "x": x,
+          "y": y
         }
       } else {
         lastPoint = {
@@ -194,17 +195,16 @@ function listenToMouse(canvas) {
         return
       }
       if (eraserEnabled) {
-        if (circleShape) {
-          context.globalCompositeOperation = 'destination-out';
-          context.strokeStyle = "#000";
-          context.beginPath();
-          context.arc(x, y, 5, 0, Math.PI * 2);
-          context.fill();
-        } else {
-          context.clearRect(x - 5, y - 5, 10, 10)
+        context.strokeStyle = 'white'
+        context.clearRect(x - 3, y - 3, 6, 6)
+        let newPoint = {
+          "x": x,
+          "y": y
         }
+        drawClear(eraserPoint.x, eraserPoint.y, newPoint.x, newPoint.y)
+        eraserPoint = newPoint
       } else {
-        var newPoint = {
+        let newPoint = {
           "x": x,
           "y": y
         }
