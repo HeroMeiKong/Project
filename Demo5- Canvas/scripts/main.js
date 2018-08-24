@@ -9,6 +9,7 @@ listenToMouse(yyy)
 var eraserEnabled = false
 var circleShape = true
 var defaultColor = 'black'
+var circleRaidus = 0.5
 let nodes = document.querySelectorAll('#actions')
 changeLineWidth(nodes)
 
@@ -69,16 +70,19 @@ function changeLineWidth(aim) {
       switch (x.currentTarget.id) {
         case 'pensmall':
           context.lineWidth = 1
+          circleRaidus = 0.5
           eraserEnabled = false
           context.strokeStyle = defaultColor
           break
         case 'penmiddle':
           context.lineWidth = 3
+          circleRaidus = 1.5
           eraserEnabled = false
           context.strokeStyle = defaultColor
           break
         case 'penbig':
           context.lineWidth = 5
+          circleRaidus = 2.5
           eraserEnabled = false
           context.strokeStyle = defaultColor
           break
@@ -167,8 +171,8 @@ function listenToMouse(canvas) {
       var x = aaa.touches[0].clientX
       var y = aaa.touches[0].clientY
       using = true
-      context.fillStyle = '#FFFFFF'
       if (eraserEnabled) {
+        context.fillStyle = '#FFFFFF'
         if (circleShape) {
           context.beginPath();
           context.arc(x, y, 3, 0, Math.PI * 2);
@@ -182,6 +186,11 @@ function listenToMouse(canvas) {
           "y": y
         }
       } else {
+        context.fillStyle = defaultColor
+        context.beginPath();
+        context.arc(x, y, circleRaidus, 0, Math.PI * 2);
+        context.fill();
+        context.closePath()
         lastPoint = {
           "x": x,
           "y": y
