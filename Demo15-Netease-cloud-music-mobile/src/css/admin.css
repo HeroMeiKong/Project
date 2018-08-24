@@ -1,0 +1,188 @@
+*{margin:0;padding:0;}
+*{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+*::before{box-sizing: border-box;}
+ul,ol{ list-style:none; }
+a{color:inherit; text-decoration: none;}
+input{font: inherit;}
+
+body{
+  font-size: 12px;
+	line-height: 1.5;
+	background-color: #F8EBEF;
+}
+
+
+/* layout */
+
+.page{
+  padding: 20px 0;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+  justify-content: center;
+  
+}
+.page-container{
+	display: flex;
+	height: 40rem;
+	width: 60rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.3),0 3px 2px 1px rgba(0,0,0,0.1);
+}
+
+.page > .page-container > aside{
+  width: 30%;
+  height: 100%;
+  background: #FFFCF9;
+}
+.page > .page-container > main{
+  flex-grow: 1;
+  padding-left: 20px;
+  width: 70%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+/* aside */
+.page > .page-container > aside{
+  display: flex;
+  flex-direction: column;
+}
+.newSong{
+  text-align: center;
+  padding: 10px;
+}
+.newSong.active{
+  background: #EF1873;
+}
+#songList-container{
+  flex-grow: 1;
+}
+.songList{
+  text-align: left;
+  border-top: 1px solid #999;
+}
+.songList > li{
+  border-bottom: 1px solid #ddd; 
+  padding: 10px; 
+  cursor: pointer;
+}
+.songList > li.active{
+  background: #EF1873;
+}
+#uploadContainer,
+#uploadButton{
+  width: 100%;
+}
+.draggable{
+  text-align: center;
+  border-radius: 4px;
+  border: 5px dashed #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  flex-direction: column;
+}
+.clickable{
+  cursor: pointer;
+  padding: 20px;
+}
+
+/* main */
+
+.form {
+  font-size: 14px;
+}
+.form > .row{
+  margin: 20px 0;
+  display: flex;
+}
+.form > .row > label{
+  width: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
+}
+.form > .row.actions{
+  margin-left: calc(4em + 5px);
+}
+.form input[type=text]{
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  height: 30px;
+}
+.form input[type=button],
+.form input[type=submit],
+.form button{
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: #EF1873;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.form button{
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: #EF1873;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form button:hover{
+  transition: all 0.3s;
+  box-shadow: 0px 2px 2px 0 rgba(214,16,107,0.5),0px 5px 5px 0 rgba(214,16,107,0.3),0px 7px 7px 0 rgba(214,16,107,0.1);
+}
+.page > .page-container > main {
+  padding-top: 20px;
+}
+
+/* loading */
+
+@keyframes loading{
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(0.1);
+  }
+}
+.site-loading{
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+.site-loading.active{
+  visibility: visible;
+}
+.site-loading::before{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  animation: loading 1s infinite alternate-reverse;
+  animation-timing-function: linear;
+}
