@@ -503,6 +503,11 @@ section.siteMessageBoard > h2,
   margin-top: 5px;
   color: rgb(143, 148, 142);
 }
+#portfoliosFrame a{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 #portfoliosFrame .porleft{
   width: 70%;
   height: 100%;
