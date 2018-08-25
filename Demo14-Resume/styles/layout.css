@@ -367,7 +367,7 @@ section.siteMessageBoard > h2,
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   height: 587px;
 }
-#portfoliosAll .portfolios > img{filter: blur(1px) brightness(0.6);}
+#portfoliosAll .portfolios  > a > img{filter: blur(1px) brightness(0.6);}
 #tools{
   display: flex;
   flex-direction: row;
@@ -434,7 +434,7 @@ section.siteMessageBoard > h2,
   cursor: pointer;
   transition: all 1s;
 }
-#portfoliosAll .portfolios > img:hover {
+#portfoliosAll .portfolios  img:hover {
   transform: scale(1.1);
 }
 

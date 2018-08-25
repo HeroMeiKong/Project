@@ -15,7 +15,8 @@
   <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left; ">
-        <span class="yk">YK</span><span class="card">card</span>
+        <span class="yk">YK</span>
+        <span class="card">card</span>
       </a>
       <nav class="menu">
         <ul class="clearfix">
@@ -48,11 +49,11 @@
             <a href="#siteContact">联系方式</a>
           </li>
           <li>
-              <a href="#siteOther">其他</a>
-            </li>
+            <a href="#siteOther">其他</a>
+          </li>
           <li>
-              <a href="#siteMessageBoard">留言板</a>
-            </li>
+            <a href="#siteMessageBoard">留言板</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -182,76 +183,86 @@
       </div>
     </nav>
     <script>
-      portfolio1.onclick = function(){
+      portfolio1.onclick = function () {
         portfolioBar.className = 'selectBar state1'
-        document.querySelector("#portfoliosAll").setAttribute("style","display: flex;");
-        document.querySelector("#portfoliosFrame").setAttribute("style","display: none;");
-        document.querySelector("#portfoliosCSS").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosAll").setAttribute("style", "display: flex;");
+        document.querySelector("#portfoliosFrame").setAttribute("style", "display: none;");
+        document.querySelector("#portfoliosCSS").setAttribute("style", "display: none;");
       }
-      portfolio2.onclick = function(){
+      portfolio2.onclick = function () {
         portfolioBar.className = 'selectBar state2'
-        document.querySelector("#portfoliosFrame").setAttribute("style","display: flex;");
-        document.querySelector("#portfoliosAll").setAttribute("style","display: none;");
-        document.querySelector("#portfoliosCSS").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosFrame").setAttribute("style", "display: flex;");
+        document.querySelector("#portfoliosAll").setAttribute("style", "display: none;");
+        document.querySelector("#portfoliosCSS").setAttribute("style", "display: none;");
       }
-      portfolio3.onclick = function(){
+      portfolio3.onclick = function () {
         portfolioBar.className = 'selectBar state3'
-        document.querySelector("#portfoliosCSS").setAttribute("style","display: flex;");
-        document.querySelector("#portfoliosAll").setAttribute("style","display: none;");
-        document.querySelector("#portfoliosFrame").setAttribute("style","display: none;");
+        document.querySelector("#portfoliosCSS").setAttribute("style", "display: flex;");
+        document.querySelector("#portfoliosAll").setAttribute("style", "display: none;");
+        document.querySelector("#portfoliosFrame").setAttribute("style", "display: none;");
       }
     </script>
     <div id="portfolio">
       <div id="portfoliosAll">
         <div class="bigOne portfolios">
-          <img src="./images/works1.jpg" alt="Work1">
+          <a href="https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile/src/index.html">
+            <img src="./images/works1.jpg" alt="Work1">
+          </a>
           <div id="tools">
             <div class="tools tool1">
-              <img src="./images/icons/github.png" alt="GitHub">
+              <a href="https://github.com/HeroMeiKong/Project">
+                <img src="./images/icons/github.png" alt="GitHub">
+              </a>
             </div>
             <div class="tools tool2">
-              <img src="./images/icons/eye.png" alt="Demo">
+              <a href="https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile/src/index.html">
+                <img src="./images/icons/eye.png" alt="Demo">
+              </a>
             </div>
             <div class="tools tool3">
-              <img src="./images/icons/link.png" alt="Link">
+              <a href="https://github.com/HeroMeiKong/Project/tree/master/Demo15-Netease-cloud-music-mobile">
+                <img src="./images/icons/link.png" alt="Link">
+              </a>
             </div>
-            <h1>Vue.js在线简历编辑器</h1>
-            <p>关键字：Vue、Webpack</p>
+            <h1>jQuery实现网易云音乐手机版</h1>
+            <p>关键字：jQuery、Webpack</p>
           </div>
         </div>
         <div class="middleOne"></div>
         <div class="smallOne">
-          <div  class="portfolios">
-            <img src="./images/works2.jpg" alt="Work2">
+          <div class="portfolios">
+            <a href="">
+              <img src="./images/works2.jpg" alt="Work2">
+            </a>
             <div id="smalltools1">
-                <div class="smalltools tool4">
-                  <img src="./images/icons/smallgithub.png" alt="GitHub">
-                </div>
-                <div class="smalltools tool5">
-                  <img src="./images/icons/smalleye.png" alt="Demo">
-                </div>
-                <div class="smalltools tool6">
-                  <img src="./images/icons/smalllink.png" alt="Link">
-                </div>
-                <h5>原生JS实现皮卡丘</h5>
-                <h6>关键字：原生JS、CSS</h6>
+              <div class="smalltools tool4">
+                <img src="./images/icons/smallgithub.png" alt="GitHub">
               </div>
+              <div class="smalltools tool5">
+                <img src="./images/icons/smalleye.png" alt="Demo">
+              </div>
+              <div class="smalltools tool6">
+                <img src="./images/icons/smalllink.png" alt="Link">
+              </div>
+              <h5>Canvas画板</h5>
+              <h6>关键字：原生JS、Canvas</h6>
+            </div>
           </div>
-          <div  class="portfolios">
+          <div class="portfolios">
             <img src="./images/works3.jpg" alt="Work3">
             <div id="smalltools2">
-                <div class="smalltools tool4">
-                  <img src="./images/icons/smallgithub.png" alt="GitHub">
-                </div>
-                <div class="smalltools tool5">
-                  <img src="./images/icons/smalleye.png" alt="Demo">
-                </div>
-                <div class="smalltools tool6">
-                  <img src="./images/icons/smalllink.png" alt="Link">
-                </div>
-                <h5>绘画大白</h5>
-                <h6>关键字：CSS</h6>
+              <div class="smalltools tool4">
+                <img src="./images/icons/smallgithub.png" alt="GitHub">
               </div>
+              <div class="smalltools tool5">
+                <img src="./images/icons/smalleye.png" alt="Demo">
+              </div>
+              <div class="smalltools tool6">
+                <img src="./images/icons/smalllink.png" alt="Link">
+              </div>
+              <h5>原生JS_keyboard导航</h5>
+              <h6>关键字：原生JS、CSS</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -267,11 +278,11 @@
         </div>
         <div class="portfoliosFrame">
           <div class="porleft">
-              <p>jQuery仿网易云</p>
-              <h6>关键字：jQuery、原生JS</h6>
+            <p>jQuery仿网易云</p>
+            <h6>关键字：jQuery、原生JS</h6>
           </div>
           <div class="porright">
-              <img src="./images/frame2.png" alt="Frame2">
+            <img src="./images/frame2.png" alt="Frame2">
           </div>
         </div>
         <div class="portfoliosFrame">
@@ -338,33 +349,33 @@
           </div>
         </div>
         <div class="portfoliosFrame">
-            <div class="porleft">
-              <p>待完成项目1</p>
-              <h6>关键字：Node.js、Express</h6>
-            </div>
-            <div class="porright">
-              <img src="./images/frame.png" alt="Frame3">
-            </div>
+          <div class="porleft">
+            <p>待完成项目1</p>
+            <h6>关键字：Node.js、Express</h6>
           </div>
-          <div class="portfoliosFrame">
-            <div class="porleft">
-              <p>待完成项目2</p>
-              <h6>关键字：React.js、Webpack</h6>
-            </div>
-            <div class="porright">
-              <img src="./images/frame.png" alt="Frame3">
-            </div>
-          </div>
-          <div class="portfoliosFrame">
-            <div class="porleft">
-              <p>待完成项目3</p>
-              <h6>关键字：原生JS</h6>
-            </div>
-            <div class="porright">
-              <img src="./images/frame.png" alt="Frame3">
-            </div>
+          <div class="porright">
+            <img src="./images/frame.png" alt="Frame3">
           </div>
         </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>待完成项目2</p>
+            <h6>关键字：React.js、Webpack</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame.png" alt="Frame3">
+          </div>
+        </div>
+        <div class="portfoliosFrame">
+          <div class="porleft">
+            <p>待完成项目3</p>
+            <h6>关键字：原生JS</h6>
+          </div>
+          <div class="porright">
+            <img src="./images/frame.png" alt="Frame3">
+          </div>
+        </div>
+      </div>
       <div id="portfoliosCSS" style="display: none;">
         <div class="portfoliosCSS1 portfoliosCSSBoth">
           <article>
@@ -395,32 +406,32 @@
           </article>
         </div>
         <div class="portfoliosCSS2 portfoliosCSSBoth">
-            <article>
-                <div class="CSS-media">
-                  <div class="CSS-image">
-                    <a href="#">
-                      <img src="./images/css2.jpg" alt="CSS2">
-                    </a>
-                  </div>
-                </div>
-                <div class="CSS-date">
-                  <time class="CSS-datetime">
-                    <span class="CSS-date-day">11</span>
-                    <span class="CSS-date-mouth">Feb</span>
-                  </time>
-                  <div class="CSS-tag">
-                      <a href="#">#CSS</a>
-                      <a href="#">#Baymax</a>
-                      <a href="#">#原生JS</a>
-                  </div>
-                  <h3 class="CSS-title">
-                    <a href="#">Baymax</a>
-                  </h3>
-                  <div class="CSS-info">
-                    <a href="#">by HeroMeiKong</a>
-                  </div>
-                </div>
-              </article>
+          <article>
+            <div class="CSS-media">
+              <div class="CSS-image">
+                <a href="#">
+                  <img src="./images/css2.jpg" alt="CSS2">
+                </a>
+              </div>
+            </div>
+            <div class="CSS-date">
+              <time class="CSS-datetime">
+                <span class="CSS-date-day">11</span>
+                <span class="CSS-date-mouth">Feb</span>
+              </time>
+              <div class="CSS-tag">
+                <a href="#">#CSS</a>
+                <a href="#">#Baymax</a>
+                <a href="#">#原生JS</a>
+              </div>
+              <h3 class="CSS-title">
+                <a href="#">Baymax</a>
+              </h3>
+              <div class="CSS-info">
+                <a href="#">by HeroMeiKong</a>
+              </div>
+            </div>
+          </article>
         </div>
         <div class="portfoliosBlog">
           <a href="#">VISIT MY GITHUB</a>
@@ -482,7 +493,9 @@
             <span class="arrow-left"></span>
             <div class="timeline-head">
               <div class="timedate">2018年7月-至今</div>
-              <a href="#" class="img"><img src="./images/logo/es6.png" alt></a>
+              <a href="#" class="img">
+                <img src="./images/logo/es6.png" alt>
+              </a>
             </div>
             <h5>Web前端开发</h5>
             <p>保持饥渴，保持学习！2018届应届毕业生，寻找工作当中...</p>
@@ -494,7 +507,9 @@
             <span class="arrow-right"></span>
             <div class="timeline-head">
               <div class="timedate">2014年9月-2018年7月</div>
-              <a href="#" class="img"><img src="./images/logo/asp.net.png" alt></a>
+              <a href="#" class="img">
+                <img src="./images/logo/asp.net.png" alt>
+              </a>
             </div>
             <h5>在校生</h5>
             <p>2014年就读于成都信息工程大学网络工程专业，学习.net开发！</p>
@@ -506,7 +521,9 @@
             <span class="arrow-left"></span>
             <div class="timeline-head">
               <div class="timedate">1994年12月31日</div>
-              <a href="#" class="img"><img src="./images/logo/born.png" alt></a>
+              <a href="#" class="img">
+                <img src="./images/logo/born.png" alt>
+              </a>
             </div>
             <h5>来自baby的咆哮...</h5>
             <p>感谢父母，选择我，我爱你们...</p>
@@ -551,25 +568,39 @@
           <div class="more-title">更多联系方式</div>
           <ul>
             <li>
-              <a href=""><img src="./images/more/wb.png" alt="微博"></a>
+              <a href="">
+                <img src="./images/more/wb.png" alt="微博">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/jianshu.png" alt="简书"></a>
+              <a href="">
+                <img src="./images/more/jianshu.png" alt="简书">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/zhihu.png" alt="知乎"></a>
+              <a href="">
+                <img src="./images/more/zhihu.png" alt="知乎">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/github.png" alt="GitHub"></a>
+              <a href="">
+                <img src="./images/more/github.png" alt="GitHub">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/StackOverflow.png" alt="StackOverFlow"></a>
+              <a href="">
+                <img src="./images/more/StackOverflow.png" alt="StackOverFlow">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/juejin.png" alt="掘金"></a>
+              <a href="">
+                <img src="./images/more/juejin.png" alt="掘金">
+              </a>
             </li>
             <li>
-              <a href=""><img src="./images/more/v2ex.png" alt="V2EX"></a>
+              <a href="">
+                <img src="./images/more/v2ex.png" alt="V2EX">
+              </a>
             </li>
           </ul>
         </div>
@@ -584,11 +615,16 @@
       <ul>
         <li>
           <h3>我的兴趣爱好</h3>
-          <div class="other-box-content">追动漫、看电影、听歌<br>对新事物（技术）会痴迷学习甚至掌握<br>偶尔会动手制作自己喜欢的东西（网页、小程序、手工作品等...）</div>
+          <div class="other-box-content">追动漫、看电影、听歌
+            <br>对新事物（技术）会痴迷学习甚至掌握
+            <br>偶尔会动手制作自己喜欢的东西（网页、小程序、手工作品等...）</div>
         </li>
         <li>
           <h3>期望的工作</h3>
-          <div class="other-box-content">1.一周工作时间：5-6天<br> 2.能有技术大牛指导工作<br> 3.留有自主学习时间<br> 4.工作氛围友好</div>
+          <div class="other-box-content">1.一周工作时间：5-6天
+            <br> 2.能有技术大牛指导工作
+            <br> 3.留有自主学习时间
+            <br> 4.工作氛围友好</div>
         </li>
         <li>
           <h3>自我评价</h3>
