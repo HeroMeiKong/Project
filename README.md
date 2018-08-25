@@ -42,5 +42,5 @@
 预览连接：https://heromeikong.github.io/Project/Demo14-Resume  
 源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo14-Resume  
 ### Demo15-Netease-cloud-music-mobile:  
-预览连接：https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile  
-源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo15-Netease-cloud-music-mobile/src  
+预览连接：https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile/src  
+源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo15-Netease-cloud-music-mobile  
