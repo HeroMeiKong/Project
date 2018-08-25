@@ -1,4 +1,4 @@
-/*把code写到#code和style标签里*/
+//把code写到#code和style标签里
 function writeCss(prefix,code,fn){
   let domCode = document.querySelector('#code')
   let n = 0;
