@@ -50,7 +50,7 @@ function createButton(id) {
 function createImage(domain) {
   var img = tag('img')
   if (domain) {
-    img.src = 'http://' + domain + '/favicon.ico'
+    img.src = 'https://' + domain + '/favicon.ico'
   } else {
     img.src = '//i.loli.net/2017/11/10/5a05afbc5e183.png'
   }
@@ -130,7 +130,7 @@ function listenToUser(hash) {
     var key = aim['key']
     var website = hash[key]
     if (lock) {} else {
-      window.open('http://' + website, '_blank')
+      window.open('https://' + website, '_blank')
     }
   }
 }
