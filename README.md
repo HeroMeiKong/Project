@@ -47,5 +47,6 @@
 2.在主目录下，打开git bash（或其它命令行界面），运行:node server 8888  
 3.在主目录下，打开git bash（或其它命令行界面），运行:http-server -c-1  
 4.打开浏览器，在地址栏中输入CLI给出的地址或127.0.0.1:8080  
+5.进入管理员界面，添加和修改歌曲：http://127.0.0.1:8080/src/admin  
 预览连接：https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile/src  
 源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo15-Netease-cloud-music-mobile  
