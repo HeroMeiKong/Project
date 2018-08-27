@@ -1,6 +1,6 @@
 # Project  
 ### Demo1-JavaScript_ImageGallery_moving1:  
-预览连接：https://heromeikong.github.io/Project/Demo1-JavaScript_ImageGallery_moving1  
+预览连接：https://heromeikong.github.io/Project/Demo1-JavaScript_ImageGallery_moving1/index.html  
 源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo1-JavaScript_ImageGallery_moving1  
 ### Demo2-JavaScript_Websites:  
 预览连接：https://heromeikong.github.io/Project/Demo2-JavaScript_Websites  
