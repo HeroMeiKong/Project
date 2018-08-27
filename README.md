@@ -42,5 +42,10 @@
 预览连接：https://heromeikong.github.io/Project/Demo14-Resume  
 源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo14-Resume  
 ### Demo15-Netease-cloud-music-mobile:  
+步骤：  
+1.注册七牛，获取七牛仓库的accessKey和secretKey，以JSON的格式保存在新建文件夹名为qiniu-config.json文件中  
+2.进入主目录，运行:node server 8888  
+3.进入主目录，运行:http-server -c-1  
+4.访问给出的地址或127.0.0.1:8080  
 预览连接：https://heromeikong.github.io/Project/Demo15-Netease-cloud-music-mobile/src  
 源码地址：https://github.com/HeroMeiKong/Project/tree/master/Demo15-Netease-cloud-music-mobile  
