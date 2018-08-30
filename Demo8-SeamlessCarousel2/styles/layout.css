@@ -17,3 +17,34 @@
 #buttonWrapper,#controls{
 	text-align: center;
 }
+#controls button{
+	font-size: 16px;
+  line-height: 16px;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 1px solid #CDCFD1;
+  background-color: #EFEFEF;
+  border-radius:5px;
+  color: #3D4451;
+  font-weight: bold;
+  margin: 30px 0;
+	transition: box-shadow 0.3s;
+	cursor: pointer;
+	outline: none;
+}
+#controls button:hover{
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+#buttonWrapper button{
+	height: 30px;
+	width: 30px;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  color: #3D4451;
+	transition: all 0.3s;
+	cursor: pointer;
+	outline: none;
+}
+#buttonWrapper button:hover{
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
