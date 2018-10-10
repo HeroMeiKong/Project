@@ -25,7 +25,7 @@ function writeMarkdown(markdown,fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  },50)
+  },100)
 }
 function createPaper(fn){
   var paper = document.createElement('div')
